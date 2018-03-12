@@ -9,11 +9,11 @@ import registerServiceWorker from "./registerServiceWorker";
 import "./index.css";
 
 ReactDOM.render(
-  <HashRouter>
-    <Provider store={store}>
-      <App />
-    </Provider>
-  </HashRouter>,
+  // <HashRouter>
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  // </HashRouter>
   document.getElementById("root")
 );
 registerServiceWorker();

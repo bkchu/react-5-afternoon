@@ -18,7 +18,6 @@ import { HashRouter, Route } from "react-router-dom";
 export default (
   <HashRouter>
     <div>
-      <Route exact path="/" render={() => <NextBtn />} />
       <Route path="/wOne" component={WizardOne} />
       <Route path="/wTwo" component={WizardTwo} />
       <Route path="/wThree" component={WizardThree} />
@@ -31,6 +30,7 @@ export default (
       <Route path="/wTen" component={WizardTen} />
       <Route path="/wEleven" component={WizardEleven} />
       <Route path="/finish" component={Finish} />
+      <Route exact path="/" render={() => <NextBtn />} />
     </div>
   </HashRouter>
 );
